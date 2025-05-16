@@ -2,5 +2,6 @@
 .vscode/
 build/
 
-# Unpublished files
+# Private files
 structure.txt
+todo
