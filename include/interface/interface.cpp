@@ -57,10 +57,7 @@ void CLIC::menu(std::string q){
             std::cout << "No content.\n";
             break;
         case CLIC::Options::Option3:
-            std::cout << "No content.\n";
-            break;
-        case CLIC::Options::Option4:
-            system("^C");
+            std::cout << "Use numbered options (e.g. '1', '2',...) or string-based options (e.g. 'home' or 'exit') to navigate.\n";
             break;
         case CLIC::Options::Option_Back:
             std::cout << "No content.\n";
