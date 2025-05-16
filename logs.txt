@@ -1,4 +1,4 @@
 Written in format: "- DATE/MONTH/YEAR: Logs content"
 
 - 15/05/2025: Project created.
-- 16/05/2025: Add CMake to use
+- 16/05/2025: Add CMake to use.
