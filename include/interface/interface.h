@@ -1,7 +1,9 @@
 #pragma once
 
+#include <string> 
+
 namespace CLIC {
-    void homeMenu(int q);
+    void menu(std::string q);
 
     void printTitle();
 }
