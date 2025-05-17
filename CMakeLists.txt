@@ -9,6 +9,7 @@ endif()
 
 
 # Libraries & include dirs
+add_subdirectory(src)
 
 # Binary
 add_executable(cliCalc src/main.cpp)

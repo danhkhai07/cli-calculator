@@ -2,7 +2,7 @@
 #include <string>
 #include <map>
 
-#include "interface.h"
+#include "interface/interface.h"
 
 CLIC::Options CLIC::resolveOption(const std::string& input) {
     auto itr = CLIC::optionStrings.find(input);

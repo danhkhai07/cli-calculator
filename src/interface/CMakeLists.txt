@@ -1,2 +1,2 @@
-add_library(interfaceLibrary STATIC interface.cpp)
-target_include_directories(interfaceLibrary PRIVATE ${CMAKE_SOURCE_DIR/include})
+add_library(interfaceLibrary STATIC ${CMAKE_CURRENT_SOURCE_DIR}/interface.cpp)
+target_include_directories(interfaceLibrary PRIVATE ${CMAKE_SOURCE_DIR}/include)
