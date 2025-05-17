@@ -5,30 +5,8 @@
 #include "interface.h"
 
 CLIC::Options CLIC::resolveOption(const std::string& input) {
-    static const std::map<std::string, CLIC::Options> optionStrings = {
-    // Numbered options
-    {"1", CLIC::Options::Option1},
-        {"1.1", CLIC::Options::Option1_1},
-        {"1.2", CLIC::Options::Option1_2},
-        {"1.3", CLIC::Options::Option1_3},
-
-    {"2", CLIC::Options::Option2},
-    {"3", CLIC::Options::Option3},
-
-    // Home Option
-    {"0", CLIC::Options::Option0},
-    {"home", CLIC::Options::Option0},
-    
-    // Exit option
-    {"4", CLIC::Options::Option4},
-    {"exit", CLIC::Options::Option4},
-    
-    // Other options
-    {"back", CLIC::Options::Option_Back}
-    };
-
-    auto itr = optionStrings.find(input);
-    if (itr != optionStrings.end()) {
+    auto itr = CLIC::optionStrings.find(input);
+    if (itr != CLIC::optionStrings.end()) {
         return itr->second;
     }
     return CLIC::Options::Option_Invalid;
