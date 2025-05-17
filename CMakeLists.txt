@@ -16,3 +16,12 @@ add_executable(cliCalc src/main.cpp)
 target_include_directories(cliCalc PRIVATE ${CMAKE_SOURCE_DIR}/include)
 target_include_directories(cliCalc PRIVATE ${CMAKE_SOURCE_DIR}/src)
 target_link_libraries(cliCalc PRIVATE interfaceLibrary)
+
+# Package
+install(TARGETS cliCalc
+    RUNTIME DESTINATION bin
+)
+
+install(DIRECTORY include/.
+    DESTINATION include
+)
