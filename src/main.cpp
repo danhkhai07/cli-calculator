@@ -1,18 +1,28 @@
-#include <iostream>
 #include <string>
+#include <iostream>
+#include <algorithm>
+#include <cctype>
 
-#include "interface/interface.h"
+#include "../include/commandRegister/commandRegister.h"
 
 int main(){
-    CLIC::printTitle();
-    CLIC::menu("0");
     while (true){
         std::string input;
-        std::cout << "> ";
-        std::cin >> input;
+        std::cout <<"> ";
 
-        if (CLIC::resolveOption(input) == CLIC::Options::Option4) return 0;
-        CLIC::menu(input);
+        if (!std::getline(std::cin, input)){
+            std::cout << "\nExitting...\n";
+            return 0;
+        }
+
+        if (CLICalc::commandRegister::registerCmd(
+            [input]() -> std::string {
+                std::string copy = input;
+                std::transform(copy.begin(),copy.end(),copy.begin(),
+                    [](unsigned char c){return std::tolower(c);} 
+                );
+                return copy;
+            }()
+        )) return 0;
     }
-    return 0;
 }
