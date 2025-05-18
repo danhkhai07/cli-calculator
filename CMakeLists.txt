@@ -33,3 +33,5 @@ install(TARGETS CLICalc
 install(DIRECTORY include/.
     DESTINATION include
 )
+
+install(FILES logs.txt README.md DESTINATION .)
