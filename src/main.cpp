@@ -14,7 +14,7 @@ int main(){
         std::string input;
         std::cout <<"\n> ";
         if (!std::getline(std::cin, input)){
-            std::cout << "\nExitting...\n";
+            std::cout << "\nExiting...\n";
             return 0;
         }
 
