@@ -1,5 +1,9 @@
 # A basic C++ CLI CALCULATOR
 
+## How to use
+Step 1: Open executable in bin/CLICalc.exe
+Step 2: Type 'help' for navigation guide
+
 ## Objectives
 This project is dedicated to learn not just about C++ appdev but also about how projects should be carried out.
 
