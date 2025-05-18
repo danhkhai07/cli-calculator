@@ -3,13 +3,16 @@
 #include <algorithm>
 #include <cctype>
 
-#include "../include/commandRegister/commandRegister.h"
+#include "commandRegister/commandRegister.h"
 
 int main(){
-    while (true){
-        std::string input;
-        std::cout <<"> ";
+    std::cout << "\tcliCalc\n";
+    std::cout << "Github repository: https://github.com/danhkhai07/cli-calculator/tree/main\n";
+    std::cout << "Tip: Use 'help' to see available commands.\n";
 
+    while (true){        
+        std::string input;
+        std::cout <<"\n> ";
         if (!std::getline(std::cin, input)){
             std::cout << "\nExitting...\n";
             return 0;

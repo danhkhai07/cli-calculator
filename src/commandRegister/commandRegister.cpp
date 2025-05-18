@@ -1,16 +1,15 @@
 #include <iostream>
 #include <unordered_map>
 #include <functional>
-#include <string_view>
-#include "../../include/commandRegister/commandRegister.h"
+#include "commandRegister/commandRegister.h"
 
 // Functional libraries
-
+#include "info/info.h"
 
 static const std::unordered_map<std::string,std::function<void()>> registries{
     // Note: Name must all be lowercase
     {"exit", nullptr},
-    {"help", nullptr},
+    {"help", CLICalc::info::helpCmd},
 };
 
 int CLICalc::commandRegister::registerCmd(const std::string& input){

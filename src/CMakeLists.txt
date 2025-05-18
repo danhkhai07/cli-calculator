@@ -1,1 +1,2 @@
-add_subdirectory(interface)
+add_subdirectory(commandRegister)
+add_subdirectory(info)
