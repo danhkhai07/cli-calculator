@@ -7,7 +7,7 @@
 #include "info/info.h"
 #include "calculate/calculate.h"
 
-static const std::unordered_map<std::string,std::function<void()>> registries{
+inline static const std::unordered_map<std::string,std::function<void()>> registries{
     // Note: Name must all be lowercase
     {"exit", nullptr},
     {"help", CLICalc::info::helpCmd},
