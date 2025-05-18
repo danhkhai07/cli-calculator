@@ -6,9 +6,9 @@
 #include "commandRegister/commandRegister.h"
 
 int main(){
-    std::cout << "\tcliCalc\n";
-    std::cout << "Github repository: https://github.com/danhkhai07/cli-calculator/tree/main\n";
-    std::cout << "Tip: Use 'help' to see available commands.\n";
+    std::cout << "CLI CALCULATOR - Written by danhkhai07\n";
+    std::cout << "- Github repository: https://github.com/danhkhai07/cli-calculator/tree/main\n";
+    std::cout << "- Tip: Use 'help' to see available commands.\n";
 
     while (true){        
         std::string input;

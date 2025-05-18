@@ -1,2 +1,6 @@
 add_subdirectory(commandRegister)
 add_subdirectory(info)
+add_subdirectory(calculate)
+
+target_link_libraries(CLICalc PRIVATE CLICalc_info)
+target_link_libraries(CLICalc PRIVATE CLICalc_calculate)

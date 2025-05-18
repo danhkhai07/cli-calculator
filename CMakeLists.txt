@@ -11,17 +11,19 @@ if( CMAKE_INSTALL_PREFIX_INITIALIZED_TO_DEFAULT )
     set(CMAKE_INSTALL_PREFIX "${CMAKE_BINARY_DIR}/install" CACHE STRING "The path to use for make install" FORCE)
 endif()
 
+
+
+# Binary
+add_executable(CLICalc src/main.cpp src/commandRegister/commandRegister.cpp)
+
 # Add sub dirs
 add_subdirectory(src)
 
-# Binary
-add_executable(CLICalc src/main.cpp)
 target_include_directories(CLICalc PRIVATE ${CMAKE_SOURCE_DIR}/include)
 target_include_directories(CLICalc PRIVATE ${CMAKE_SOURCE_DIR}/src)
 
 # Link libraries
 target_link_libraries(CLICalc PRIVATE CLICalc_commandRegister)
-target_link_libraries(CLICalc PRIVATE CLICalc_info)
 
 # Package
 install(TARGETS CLICalc
