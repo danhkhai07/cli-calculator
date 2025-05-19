@@ -11,7 +11,7 @@
 /// | key 1: If number <= INT_MAX
 /// | key 2: If input is operator
 /// @return 1: invalid input | 0: valid input
-int CLICalc::calculate::checkError(const std::string& input, const int& key){
+inline int CLICalc::calculate::checkError(const std::string& input, const int& key){
     switch (key){
         case 1: // If number <= INT_MAX
             try {
