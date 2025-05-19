@@ -8,6 +8,8 @@
 /// @brief Error-checking function for calculators
 /// @param input String input each calculators uses
 /// @param key The key that informs about the input status
+/// | key 1: If number <= INT_MAX
+/// | key 2: If input is operator
 /// @return 1: invalid input | 0: valid input
 int CLICalc::calculate::checkError(const std::string& input, const int& key){
     switch (key){
