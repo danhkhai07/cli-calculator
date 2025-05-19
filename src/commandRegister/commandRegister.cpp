@@ -24,7 +24,9 @@ int CLICalc::commandRegister::registerCmd(const std::string& input){
     } else if (!itr->second){
         return 1;
     } else {
+        std::cout << "\n";
         itr->second();
+        std::cout << "\n";
     }
     
     return 0;

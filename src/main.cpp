@@ -12,7 +12,7 @@ int main(){
 
     while (true){        
         std::string input;
-        std::cout <<"\n> ";
+        std::cout <<"> ";
         if (!std::getline(std::cin, input)){
             std::cout << "\nExiting...\n";
             return 0;
